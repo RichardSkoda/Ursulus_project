@@ -1,13 +1,19 @@
 header {
+  background-image: url();
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   justify-content: center;
+  background-color: rgb(243, 243, 243);
   border-bottom: 1px solid grey;
   height: 100px;
+  font-family: Arial;
 }
 
 nav ul {
   display: flex;
-  flex-wrap: wrap;
   gap: 90px;
   flex-direction: row;
   justify-content: space-between;
@@ -25,17 +31,70 @@ nav ul li{
 
 nav li a {
   text-decoration: none;
-  font-family: Arial;
   font-size: 25px;
-  color: black;
+  font-weight: bold;
+  color: rgb(41, 41, 41);
   margin: 0;
+  padding: 10px;
 }
 
-nav img {
-  width: 150px;
-  margin-top: 0;
+nav li a:hover {
+  color: grey;
+}
+
+nav li a:active {
+  font-size: 24px;
+  padding: 11px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 100px;
 }
 
 .main-logo {
-  margin-bottom: 30px;
+  width: 150px;
+  margin-top: 0;
+  border: 1px solid black;
+  border-radius: 100px;
 }
+
+.main-logo:hover {
+  border-color: grey;
+}
+
+.main-logo:active {
+  width: 148px;
+  border: 2px solid grey;
+}
+
+.left-side-picture {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 100px;
+}
+
+.left-side-picture img {
+  height: 75px;
+}
+
+.social-media-icon {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  right: 10px;
+}
+
+.social-media-icon img {
+  height: 45px;
+}
+

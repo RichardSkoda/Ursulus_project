@@ -2,32 +2,44 @@ main {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.main-picture {
+.main-picture-container {
   display: flex;
   justify-content: center;
+  margin-top: 120px;
 }
 
-.ring {
-  width: 50%;
+.main-picture {
+  width: 1100px;
   height: 450px;
   margin-top: 50px;
 }
 
 .personal-info {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 20px;
+  
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 h1 {
   color: grey;
   border-bottom: 1px solid;
+  margin-top: 50px;
   padding-bottom: 10px;
-  margin-bottom: 0;
+  margin-bottom: 15;
+  width: 1300px;
 }
 
 .h1-side {
   font-size: 23px;
+}
+
+.personal-info p {
+  width: 1100px;
 }

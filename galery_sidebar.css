@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar {
+  background-image: url();
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(243, 243, 243);
+  width: 100px;
+  border-right: 1px solid black;
+  z-index: 100;
+}
+
+.sidebar ul {
+  display: block;
+  gap: 50px;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.sidebar-navigation-element {
+  height: 80px;
+}
+
+.sidebar ul a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(41, 41, 41);
+  margin-left: 10px;
+}
+
+nav a:hover {
+  color: grey;
+}
+
+nav li a:active {
+  font-size: 24px;
+  padding: 11px;
+}
+
