@@ -6,13 +6,13 @@ header {
   left: 0;
   right: 0;
   justify-content: center;
-  background-color: rgb(243, 243, 243);
-  border-bottom: 1px solid grey;
+  background-color: #2d3135;
+  opacity: 0.95;
+  border-bottom: 1px solid white;
   height: 100px;
-  font-family: Arial;
 }
 
-nav ul {
+.header ul {
   display: flex;
   gap: 90px;
   flex-direction: row;
@@ -22,37 +22,30 @@ nav ul {
   margin: 0;
 }
 
-nav ul li{
+.header ul li{
   display: flex;
   align-items: center;
   list-style-type: none;
   height: 100px;
+  width: 113px;
 }
 
-nav li a {
+.header li a {
   text-decoration: none;
   font-size: 25px;
   font-weight: bold;
-  color: rgb(41, 41, 41);
+  color: rgb(173, 173, 173);
   margin: 0;
   padding: 10px;
 }
 
-nav li a:hover {
+.header li a:hover {
   color: grey;
 }
 
-nav li a:active {
+.header li a:active {
   font-size: 24px;
   padding: 11px;
-}
-
-.navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 100px;
 }
 
 .main-logo {

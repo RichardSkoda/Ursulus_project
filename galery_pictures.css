@@ -6,7 +6,7 @@ p {
 .rings-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 15px;
+  column-gap: 0;
   row-gap: 80px;
   padding: 20px;
 }
@@ -14,6 +14,6 @@ p {
 
 .galery-picture-container img {
   height: 300px;
-  width: 450px;
+  width: 350px;
 }
 

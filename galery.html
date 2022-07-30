@@ -13,20 +13,24 @@
   <title>Ursulus</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <div class="navigation"><li><a href="ursulus_main.html">Úvod</a></li></div>
-        <div class="navigation"><li><a href="production.html">Výroba</a></li></div>
-        <div class="main-logo-container">
-          <a href="ursulus_main.html">
-            <img class="main-logo" src="Images/ursulus_logo.jpg" alt="">
-          </a>
-        </div>
-        <div class="navigation"><li><a href="galery.html">Galerie</a></li></div>
-        <div class="navigation"><li><a href="contact.html">Kontakt</a></li></div>
-      </ul>
-    </nav>
+  <header class="header">
+    <ul>
+      <li>
+        <a id="main-btn" href="ursulus_main.html">Úvod</a>
+      </li>
+      <li>
+        <a id="production-btn" href="production.html">Výroba</a>
+      </li>
+      <a href="ursulus_main.html">
+        <img class="main-logo" src="Images/ursulus_logo.jpg">
+      </a>
+      <li>
+        <a id="galery-btn" href="galery.html">Galerie</a>
+      </li>
+      <li>
+        <a id="contact-btn" href="contact.html">Kontakt</a>
+      </li>
+    </ul>
 
     <div class="social-media-icon">
       <div>
@@ -41,15 +45,15 @@
 
   <!--Sidebar should appear slowly from right side-->
   <!--When go to another site, it should disappear slowly-->
-  <nav class="sidebar"> 
+  <div class="sidebar"> 
     <ul>
-      <div class="sidebar-navigation-element"><a href="">Šperky</a></div>
-      <div class="sidebar-navigation-element"><a href="">Nože</a></div>
-      <div class="sidebar-navigation-element"><a href="">Břitvy</a></div>
-      <div class="sidebar-navigation-element"><a href="">Restauro</a></div>
-      <div class="sidebar-navigation-element"><a href="">Ostatní</a></div>
+      <li><a href="#">Šperky</a></li>
+      <li><a href="#">Nože</a></li>
+      <li><a href="#">Břitvy</a></li>
+      <li><a href="#">Restauro</a></li>
+      <li><a href="#">Ostatní</a></li>
     </ul>
-  </nav>
+  </div>
 
   <main>
     <section class="rings-grid">
@@ -150,5 +154,7 @@
   </main>
 
   <footer></footer>
+
+  <script src="ursulus.js"></script>
 </body>
 </html>

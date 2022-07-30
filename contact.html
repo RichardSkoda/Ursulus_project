@@ -6,24 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="galery_sidebar.css">
+  <link rel="stylesheet" href="general.css">
 
   <title>Ursulus</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <div class="navigation"><li><a href="ursulus_main.html">Úvod</a></li></div>
-        <div class="navigation"><li><a href="production.html">Výroba</a></li></div>
-        <div class="main-logo-container">
-          <a href="ursulus_main.html">
-            <img class="main-logo" src="Images/ursulus_logo.jpg" alt="">
-          </a>
-        </div>
-        <div class="navigation"><li><a href="galery.html">Galerie</a></li></div>
-        <div class="navigation"><li><a href="contact.html">Kontakt</a></li></div>
-      </ul>
-    </nav>
+  <header class="header">
+    <ul>
+      <li>
+        <a id="main-btn" href="ursulus_main.html">Úvod</a>
+      </li>
+      <li>
+        <a id="production-btn" href="production.html">Výroba</a>
+      </li>
+      <a href="ursulus_main.html">
+        <img class="main-logo" src="Images/ursulus_logo.jpg">
+      </a>
+      <li>
+        <a id="galery-btn" href="galery.html">Galerie</a>
+      </li>
+      <li>
+        <a id="contact-btn" href="contact.html">Kontakt</a>
+      </li>
+    </ul>
 
     <div class="social-media-icon">
       <div>
@@ -36,10 +41,22 @@
     </div>
   </header>
 
+  <div class="sidebar"> 
+    <ul>
+      <li><a href="#">Šperky</a></li>
+      <li><a href="#">Nože</a></li>
+      <li><a href="#">Břitvy</a></li>
+      <li><a href="#">Restauro</a></li>
+      <li><a href="#">Ostatní</a></li>
+    </ul>
+  </div>
+
   <main>
 
   </main>
 
   <footer></footer>
+
+  <script src="ursulus.js"></script>
 </body>
 </html>
