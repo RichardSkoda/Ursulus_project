@@ -21,14 +21,20 @@
 }
 
 .sidebar ul li {
-  position: relative;
+  margin-left: -15px;
   list-style-type: none;
   cursor: pointer;
   padding: 25px 10px;
+  transition: all 0.7s ease;
+}
+
+.sidebar.active ul li {
+  margin-left: 0;
 }
 
 .sidebar ul li a {
-  display: none;
+  position: relative;
+  left: -90px;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
@@ -36,6 +42,11 @@
   padding: 25px 10px;
   transition: all 0.7s ease;
 }
+
+.sidebar.active ul li a {
+  left: 0;
+}
+
 
 .sidebar ul li:hover {
   border-left: 5px solid #3e84c1;
@@ -45,9 +56,4 @@
 
 .sidebar ul li a:active {
  color: white;
-}
-
-.sidebar.active ul li a {
-  display: inline;
-  transition: all 0.7s ease;
 }
