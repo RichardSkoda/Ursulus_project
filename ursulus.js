@@ -5,38 +5,26 @@ let logoBtn = document.querySelector('.main-logo');
 let galeryBtn = document.querySelector('#galery-btn');
 let contactBtn = document.querySelector('#contact-btn');
 
-// try to move sidebar according page title
-const galeryTitle = document.querySelector('#title');
+const pageTitle = document.querySelector('#title');
 
 function removeSidebar() {
   event.preventDefault();
   sidebar.classList.remove('active');
 };
 
-/* co takhle udelat 2x sidebar.css. 1x pouzit aktualni pro galery a pro ostatni pouzit to same, ale otocene chovani pro active a non active
-takto by bylo pro ostatni
+// pocitat a resetovat onclick. Kdyz kliknuto 1, sidebar vyleze. kdyz vicekrat, zustava na miste. Kdyz kliknuto na jiny odkaz, hodnota se vuresetuje
 
-.sidebar ul li {
-  margin-left: 0;
-  list-style-type: none;
-  cursor: pointer;
-  padding: 25px 10px;
-  transition: all 0.7s ease;
-}
+// nejak zakazat kliknuti na a tag link (galery), kdyz jsem na strance galery
 
-.sidebar.active ul li {       tady mozna napsat deactive, at se to pak v js neplete
-  margin-left: -15px;
+if (pageTitle.text === 'Ursulus- galery') {
+  galeryBtn.style.pointerEvents = 'none';
 }
-*/
 
 function enableSidebar() {
-  console.log(galeryTitle.text)
-  console.log(sidebar)
-  if (galeryTitle.text === 'Ursulus- galery' && sidebar.classList.length === 1) {
+  if (pageTitle.text === 'Ursulus- galery') {
     sidebar.classList.toggle('active');
-    console.log(sidebar)
   };
-  if (galeryTitle.text != 'Ursulus- galery') {
+  if (pageTitle.text != 'Ursulus- galery') {
     sidebar.classList.toggle('active');
   }
 };
