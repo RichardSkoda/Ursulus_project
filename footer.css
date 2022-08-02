@@ -1,0 +1,23 @@
+.footer {
+  position: fixed;
+  display: flex;
+  justify-content: right;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  background-color: #2d3135;
+}
+
+.social-media-icon {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-right: 20px;
+}
+
+.social-media-icon img {
+  height: 25px;
+  border-radius: 5px;
+}

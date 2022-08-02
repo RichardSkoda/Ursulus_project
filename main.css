@@ -1,3 +1,7 @@
+.main-content-container {
+  margin-left: -180px;
+}
+
 .main-picture-container {
   display: flex;
   justify-content: center;

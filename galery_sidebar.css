@@ -5,8 +5,6 @@
   top: 100px;
   left: 0;
   background-color: #2d3135;
-  opacity: 0.95;
-  border-right: 1px solid black;
   border-radius: 1px;
   z-index: 100;
   transition: all 0.7s ease;

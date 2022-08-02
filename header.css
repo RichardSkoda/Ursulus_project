@@ -1,5 +1,4 @@
 header {
-  background-image: url();
   display: flex;
   position: fixed;
   top: 0;
@@ -7,7 +6,6 @@ header {
   right: 0;
   justify-content: center;
   background-color: #2d3135;
-  opacity: 0.95;
   border-bottom: 1px solid white;
   height: 100px;
 }
@@ -40,14 +38,16 @@ header {
 }
 
 .header li a:hover {
-  color: grey;
+  border-bottom: 2px solid #3e84c1;
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
 }
-
+/*
 .header li a:active {
   font-size: 24px;
   padding: 11px;
 }
-
+*/
 .main-logo {
   width: 150px;
   margin-top: 0;
@@ -63,31 +63,3 @@ header {
   width: 148px;
   border: 2px solid grey;
 }
-
-.left-side-picture {
-  display: flex;
-  align-items: center;
-  height: 100px;
-  position: fixed;
-  top: 0;
-  left: 100px;
-}
-
-.left-side-picture img {
-  height: 75px;
-}
-
-.social-media-icon {
-  display: flex;
-  align-items: center;
-  column-gap: 10px;
-  height: 100px;
-  position: fixed;
-  top: 0;
-  right: 10px;
-}
-
-.social-media-icon img {
-  height: 45px;
-}
-
