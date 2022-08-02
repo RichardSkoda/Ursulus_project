@@ -1,72 +1,44 @@
-let sidebar = document.querySelector('.sidebar');
-let mainBtn = document.querySelector('#main-btn');
-let productionBtn = document.querySelector('#production-btn');
-let logoBtn = document.querySelector('.main-logo');
-let galeryBtn = document.querySelector('#galery-btn');
-let contactBtn = document.querySelector('#contact-btn');
+const sidebar = document.querySelector('.sidebar');
+const sidebarsLi = document.getElementsByClassName('sidebar-li');
+const sidebarsA = document.getElementsByClassName('sidebar-a');
 
 const pageTitle = document.querySelector('#title');
 
-function removeSidebar() {
-  event.preventDefault();
-  sidebar.classList.remove('active');
-};
+let cat = localStorage.getItem('active');
 
-// pocitat a resetovat onclick. Kdyz kliknuto 1, sidebar vyleze. kdyz vicekrat, zustava na miste. Kdyz kliknuto na jiny odkaz, hodnota se vuresetuje
-
-// nejak zakazat kliknuti na a tag link (galery), kdyz jsem na strance galery
-
-if (pageTitle.text === 'Ursulus- galery') {
-  galeryBtn.style.pointerEvents = 'none';
+function enableSidebar() {
+  if (pageTitle.text === 'Ursulus- galery' && cat === 'no') {
+    sidebar.classList.toggle('active');
+    localStorage.setItem('active', 'yes')
+  } else if (pageTitle.text === 'Ursulus- galery' && cat === 'yes') {
+    sidebar.style.width = '175px';
+    sidebar.style.transition = 'all 0s';
+    for(let i = 0; i < sidebarsLi.length; i++) {
+      sidebarsLi[i].style.marginLeft = '0';
+      sidebarsLi[i].transition = 'all 0s';
+    };
+    for(let j = 0; j < sidebarsLi.length; j++) {
+      sidebarsA[j].style.left = '0';
+      sidebarsA[j].style.transition = 'all 0s';
+    };
+  }
+  if (pageTitle.text != 'Ursulus- galery' && cat === 'yes') {
+    sidebar.classList.toggle('active');
+    localStorage.setItem('active', 'no')
+  } else if (pageTitle.text != 'Ursulus- galery' && cat === 'no') {
+    console.log(sidebarsLi);
+    console.log(sidebarsA);
+    sidebar.style.width = '0';
+    sidebar.style.transition = 'all 0s';
+    for(let i = 0; i < sidebarsLi.length; i++) {
+      sidebarsLi[i].style.marginLeft = '-15px';
+      sidebarsLi[i].transition = 'all 0s';
+    };
+    for(let j = 0; j < sidebarsLi.length; j++) {
+      sidebarsA[j].style.left = '-90px';
+      sidebarsA[j].style.transition = 'all 0s';
+    };
+  };
 }
 
-function enableSidebar() {
-  if (pageTitle.text === 'Ursulus- galery') {
-    sidebar.classList.toggle('active');
-  };
-  if (pageTitle.text != 'Ursulus- galery') {
-    sidebar.classList.toggle('active');
-  }
-};
-
 enableSidebar();
-
-
-// funguje, ale nerefresuje stranku. kdzy ano, nevylejza sidebar
-
-/*
-function enableSidebar() {
-  event.preventDefault();
-  if (sidebar.classList.length === 1) {
-    sidebar.classList.toggle('active');
-  };
-};
-
-function removeSidebar() {
-  event.preventDefault();
-  sidebar.classList.remove('active');
-};
-
-galeryBtn.onclick = function() {
-  setTimeout(function(){ location.reload() }, 3000);
-  enableSidebar()
-};
-
-mainBtn.onclick = function() {    // how to refresh page and move sidebar together???
-  setTimeout(function(){ location.reload() }, 3000);
-  removeSidebar()
-};
-productionBtn.onclick = function() {
-  setTimeout(function(){ location.reload() }, 3000);
-  removeSidebar()
-};
-logoBtn.onclick = function() {
-  setTimeout(function(){ location.reload() }, 3000);
-  removeSidebar()
-};
-contactBtn.onclick = function() {
-  setTimeout(function(){ location.reload() }, 3000);
-  removeSidebar()
-};
-
-*/
