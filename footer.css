@@ -4,11 +4,18 @@
   justify-content: right;
   height: 50px;
   bottom: 0;
-  left: 0;
+  left: 0px;
   height: 30px;
   width: 100%;
   background-color: #2d3135;
+  opacity: 0.9;
 }
+
+/* tohle mi nefacha. Jak upravit delku footeru pri pohzblivem sidebaru<
+.sidebar:active footer {
+  left: 175px;
+}
+*/
 
 .social-media-icon {
   display: flex;

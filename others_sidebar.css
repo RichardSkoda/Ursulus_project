@@ -5,6 +5,7 @@
   top: 100px;
   left: 0;
   background-color: #2d3135;
+  opacity: 0.9;
   z-index: 100;
   transition: all 0.7s ease;
 }
