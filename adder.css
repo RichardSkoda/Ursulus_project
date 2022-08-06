@@ -1,26 +1,25 @@
 .form {
-  margin-top: 120px;
-  padding-left: 20px;
+  position: absolute;
+  background-color: #d7dcdf;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  height: 100%;
 }
 
 .item-select-container {
   display: flex;
   flex-direction: column;
   width: 200px;
-  
 }
-
-.item-select-label {
-  font-weight: bold;
-}
-
 
 .item-select-container {
   position: relative;
   display: flex;
   gap: 5px;
   overflow: hidden;
-  border-radius: 3px;
 }
 
 .item-selection {
@@ -36,22 +35,24 @@
   padding: 5px 8px;
   cursor: pointer;
   font-size: 15px;
+  border-radius: 2px;
 }
 
 .item-select-container::after {
   content: '\25BC';
+  color: #3e84c1;
   position: absolute;
-  right: 0;
-  top: 23px;
-  background-color: #3e84c1;
+  right: 5px;
+  top: 29px;
   cursor: pointer;
   pointer-events: none;
-  padding: 5px 8px;
+  border-radius: 2px;
 }
 
-.description-input {
+.description-input-container {
   position: relative;
   display: flex;
+  flex-direction: column;
   gap: 5px;
   overflow: hidden;
   border-radius: 3px;
@@ -61,11 +62,53 @@
   background-color: #616364;
   color: white;
   width: 300px;
+  padding: 5px 8px;
+  font-size: 15px;
+  border: none;
+  border-radius: 3px;
 }
 
 .description-input-big {
   background-color: #616364;
   color: white;
-  width: 300px;
+  width: 700px;
+  padding: 5px 8px;
+  font-size: 15px;
+  border: none;
+  border-radius: 3px;
+}
+
+.image-input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+#results {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+}
+
+.submit-button {
+  position: relative;
+  left: 47%;
+  margin-top: 30px;
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #3e84c1;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
 }
 

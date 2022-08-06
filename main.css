@@ -13,29 +13,23 @@
 
 .main-picture {
   width: 1100px;
-  height: 450px;
+  height: 700px;
   margin-top: -56px;
 }
 
 .personal-info-container{
   position: relative;
-  top: 400px;
+  top: 600px;
   background-color: white;
 }
 
-.personal-info {
+.name-container {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 .name {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-h1 {
   color: grey;
   border-bottom: 1px solid;
   margin-top: 50px;
@@ -44,10 +38,14 @@ h1 {
   width: 1300px;
 }
 
-.h1-side {
+.name-side {
   font-size: 23px;
 }
 
-.personal-info p {
-  width: 1100px;
+.personal-info{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 21%;
+  width: 600px;
 }

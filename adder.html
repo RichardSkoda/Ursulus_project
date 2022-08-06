@@ -52,11 +52,10 @@
 
   <main>
     <form class="form">
-      
       <div class="item-select-container">
         <label class="item-select-label">Add to</label>
         <select class="item-selection">
-          <option value="">Šperky</option>
+          <option value="">Šperky/</option>
           <option value="">Nože</option>
           <option value="">Břitvy</option>
           <option value="">Restauro</option>
@@ -65,31 +64,33 @@
       </div>
       <br>
       <div class="description-input-container">
-        <label>Thumbnail info</label>
+        <label class="description-label">Thumbnail info</label>
         <input class="description-input" type="text" placeholder="Enter info">
       </div>
       <br>
       <div class="description-input-container">
-        <label>Item name</label>
+        <label class="description-label">Item name</label>
         <input class="description-input" type="text" placeholder="Enter item name">
       </div>
       <br>
       <div class="description-input-container">
-        <label>Item describtion</label>
-        <input class="description-input-big" type="text" placeholder="Enter item describtion">
+        <label class="description-label">Item describtion</label>
+        <textarea class="description-input-big" type="text" placeholder="Enter item describtion" rows="15" ></textarea>
       </div>
       <br>
-      <div>
-        <label>Upload thumbnail image</label>
-        <input type="image" src="">
+      <div class="image-input-container">
+        <label class="description-label">Upload thumbnail image</label>
+        <input id="file" type="file" accept="image/*">
+        <output id="result"></output>
       </div>
       <br>
-      <div>
-        <label>Upload images</label>
-        <input type="image" src="">
+      <div class="image-input-container">
+        <label class="description-label">Upload images</label>
+        <input id="files" type="file" multiple="multiple" accept="image/*">
+        <output id="results"></output>
       </div>
+      <input class="submit-button" type="submit" value="Save">
     </form>
-
   </main>
 
   <footer class="footer">
@@ -104,5 +105,6 @@
   </footer>
 
   <script src="sidebar.js"></script>
+  <script src="adder.js"></script>
 </body>
 </html>

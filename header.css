@@ -5,9 +5,8 @@ header {
   left: 0;
   right: 0;
   justify-content: center;
-  background-color: #2d3135;
+  background-color: #3c4146;
   height: 100px;
-  opacity: 0.95;
   z-index: 100;
 }
 

@@ -20,13 +20,12 @@ function enableSidebar() {
       sidebarsA[j].style.left = '0';
       sidebarsA[j].style.transition = 'all 0s';
     };
-  }
+  };
+
   if (pageTitle.text != 'Ursulus- galery' && activeSidebar === 'yes') {
     sidebar.classList.toggle('active');
     localStorage.setItem('active', 'no')
   } else if (pageTitle.text != 'Ursulus- galery' && activeSidebar === 'no') {
-    console.log(sidebarsLi);
-    console.log(sidebarsA);
     sidebar.style.width = '0';
     sidebar.style.transition = 'all 0s';
     for(let i = 0; i < sidebarsLi.length; i++) {
@@ -38,6 +37,6 @@ function enableSidebar() {
       sidebarsA[j].style.transition = 'all 0s';
     };
   };
-}
+};
 
 enableSidebar();

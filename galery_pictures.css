@@ -1,21 +1,19 @@
-p {
-  margin: 0;
-  padding: 0;
+.main-galery-picture-container {
+  position: fixed;
+  top: 100px;
+  left: 300px;
+  display: flex;
 }
 
-.galery-main-image {
-  background-image: url('Images_product/Sperky/uvodni_obr.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative;
-  height: 500px;
-  right: -10px;
-  left: -10px;
-  top: -10px;
+.main-galery-picture {
+  width: 1400px;
+  height: 600px;
 }
 
 .galery-grid-container {
-  padding-left: 150;
+  position: relative;
+  top: 700px;
+  left: -100px;
 }
 
 .rings-grid {
@@ -25,10 +23,15 @@ p {
   row-gap: 80px;
   padding-top: 20px;
   padding-left: 340px;
+  background-color: white;
 }
-
 
 .galery-picture-container img {
   height: 300px;
   width: 350px;
+}
+
+.ring-title {
+  margin: 0;
+  padding: 0;
 }
