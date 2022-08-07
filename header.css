@@ -6,7 +6,7 @@ header {
   right: 0;
   justify-content: center;
   background-color: #3c4146;
-  height: 100px;
+  height: 50px;
   z-index: 100;
 }
 
@@ -24,14 +24,13 @@ header {
   display: flex;
   align-items: center;
   list-style-type: none;
-  height: 100px;
+  height: 50px;
   width: 100%;
 }
 
 .header li a {
   text-decoration: none;
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 20px;
   color: rgb(173, 173, 173);
   margin: 0;
   padding: 10px;
@@ -49,7 +48,7 @@ header {
 }
 */
 .main-logo {
-  width: 150px;
+  width: 90px;
   margin-top: 0;
   border: 1px solid black;
   border-radius: 100px;
@@ -74,11 +73,11 @@ header {
   display: flex;
   align-items: center;
   list-style-type: none;
-  height: 100px;
+  height: 50px;
   width: 100%;
 }
 
 .adder-button-container li a {
-  font-size: 20px;
+  font-size: 15px;
   color: rgb(255, 255, 255);
 }

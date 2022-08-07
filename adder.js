@@ -3,6 +3,8 @@ document.querySelector("#file").addEventListener("change", (e) => { //CHANGE EVE
     const file = e.target.files; //FILE LIST OBJECT CONTAINING UPLOADED FILES
     const output = document.querySelector("#result");
     output.innerHTML = "";
+    console.log(file)
+    console.log(file[0].type.match("image"))
         if (!file[0].type.match("image"));// ONLY PHOTOS (SKIP CURRENT ITERATION IF NOT A PHOTO)
         const picReader = new FileReader(); // RETRIEVE DATA URI 
         picReader.addEventListener("load", function (event) { // LOAD EVENT FOR DISPLAYING PHOTOS

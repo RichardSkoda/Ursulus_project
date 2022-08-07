@@ -10,7 +10,7 @@ function enableSidebar() {
     sidebar.classList.toggle('active');
     localStorage.setItem('active', 'yes')
   } else if (pageTitle.text === 'Ursulus- galery' && activeSidebar === 'yes') {
-    sidebar.style.width = '175px';
+    sidebar.style.width = '150px';
     sidebar.style.transition = 'all 0s';
     for(let i = 0; i < sidebarsLi.length; i++) {
       sidebarsLi[i].style.marginLeft = '0';
