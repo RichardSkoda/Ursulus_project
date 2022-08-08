@@ -20,9 +20,8 @@
 
 .thumbnails-container div {
   position: fixed;
-  transition: 0.2s all ease;
+  transition: 0.2s all ease;  /* tohle je jenom na test*/
   transform: translate(-50%, -50%)
-  
 }
 
 .jewel-thumbnail-container {
@@ -30,9 +29,10 @@
   top: 20%;
 }
 
-.knive-thumbnail-container{
+.knive-thumbnail-container {
   left: 35%;
   top: 40%;
+  transition: 0.2s all ease;
 }
 
 .razer-thumbnail-container {
@@ -64,8 +64,15 @@
   transition: 0.2s all ease;
 }
 
+
+
+/* tohle je jenom na test*/
 .thumbnails-container div img:hover {
-  width: 270px;
-  height: 270px;
+  width: 350px;
+  height: 350px;
 }
 
+.knive-thumbnail-container:hover {
+  left: 32%;
+  top: 37%;
+}
