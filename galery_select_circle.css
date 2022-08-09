@@ -1,0 +1,80 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.main-galery-select {
+  background-color: black;
+}
+
+.image-navigation-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.table-photo-container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+ }
+ 
+ .table-photo {
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+ }
+ 
+ .thumbnails-container div {
+   position: absolute;
+   transform: translate(-50%, -50%)
+ }
+ 
+ .jewel-thumbnail-container {
+   left: 50%;
+   top: 29.7%;
+ }
+ 
+ .knive-thumbnail-container {
+   left: 37%;
+   top: 45%;
+ }
+ 
+ .razer-thumbnail-container {
+   left: 63%;
+   top: 45%;
+ }
+ 
+ .restaur-thumbnail-container {
+   left: 37%;
+   top: 75%;
+ }
+ 
+ .other-thumbnail-container {
+   left: 63%;
+   top: 75%;
+ }
+ 
+ .thumbnail-photos {
+   width: 150px;
+   height: 150px;
+   border-radius: 200px;
+ }
+ 
+ .thumnail-info {
+   text-align: center;
+ }
+ 
+ .thumbnails-container div img {
+   transition: 0.4s all ease;
+ }
+ 
+ 
+ /* tohle je jenom na test*/
+ .thumbnails-container div img:hover {
+   width: 270px;
+   height: 270px;
+ }
+ 
