@@ -6,6 +6,7 @@ box-sizing: border-box;
 
 
 .thumbnails-container {
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('Images_product/product_table.jpg');
   display: flex;
   justify-content: center;
   align-items: center;
