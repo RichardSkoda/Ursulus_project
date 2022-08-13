@@ -1,25 +1,25 @@
 .form {
   position: absolute;
   background-color: #d7dcdf;
-  top: 100px;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px;
+  padding-top: 5%;
+  padding-left: 1%;
   height: 100%;
 }
 
 .item-select-container {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 10%;
+  position: relative;
+  overflow: hidden;
 }
 
-.item-select-container {
-  position: relative;
-  display: flex;
-  gap: 5px;
-  overflow: hidden;
+.item-select-label {
+  padding-left: 5%;
+  padding-bottom: 2%;
 }
 
 .item-selection {
@@ -32,21 +32,20 @@
   border: none;
   background-color: #616364;
   color: white;
-  padding: 5px 8px;
+  padding: 3% 5%;
   cursor: pointer;
-  font-size: 15px;
-  border-radius: 2px;
+  font-size: 1em;
+  border-radius: 5px;
 }
 
 .item-select-container::after {
   content: '\25BC';
   color: #3e84c1;
   position: absolute;
-  right: 5px;
-  top: 29px;
+  right: 2%;
+  top: 1.5em;
   cursor: pointer;
   pointer-events: none;
-  border-radius: 2px;
 }
 
 .description-input-container {
@@ -58,24 +57,26 @@
   border-radius: 3px;
 }
 
-.description-input {
-  background-color: #616364;
-  color: white;
-  width: 300px;
-  padding: 5px 8px;
-  font-size: 15px;
-  border: none;
-  border-radius: 3px;
-}
-
+.description-input,
 .description-input-big {
   background-color: #616364;
   color: white;
-  width: 700px;
-  padding: 5px 8px;
-  font-size: 15px;
+  width: 25%;
+  padding: 0.5% 0.55%;
+  font-size: 1em;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
+}
+
+.description-input-big {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+  font-size: 1em;
+}
+
+/* remove auto browser outer border */
+textarea:focus, input:focus{
+  outline: none;
 }
 
 .image-input-container {
@@ -91,7 +92,7 @@
   display: flex;
   gap: 10px;
   padding: 10px 0;
-}
+  }
 
 .thumbnail {
   width: 100px;
@@ -108,7 +109,7 @@
   background-color: #3e84c1;
   color: white;
   border: none;
-  border-radius: 2px;
+  border-radius: 5px;
   cursor: pointer;
 }
 

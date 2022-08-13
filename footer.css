@@ -1,13 +1,14 @@
 .footer {
   position: fixed;
   display: flex;
-  justify-content: right;
-  height: 50px;
+  justify-content: center;
+  align-items: center;
   bottom: 0;
-  left: 0px;
-  height: 30px;
-  width: 100%;
+  left: 15%;
+  right: 15%;
+  height: 3%;
   background-color: #3c4146;
+  background: linear-gradient(to right, rgba(255,255,255,0.1), #3c4146, rgba(255,255,255,0.1));
 }
 
 /* tohle mi nefacha. Jak upravit delku footeru pri pohzblivem sidebaru<
@@ -18,12 +19,11 @@
 
 .social-media-icon {
   display: flex;
-  align-items: center;
-  column-gap: 10px;
-  margin-right: 20px;
+  gap: 10%;
 }
 
 .social-media-icon img {
-  height: 25px;
-  border-radius: 5px;
+  display: flex;
+  width: 20px;
+  border-radius: 20%;
 }
