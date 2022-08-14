@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-header {
+.header-wide {
   display: flex;
   position: fixed;
   top: 0;
@@ -14,7 +14,7 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #3c4146;
-  opacity: 0.85;
+  opacity: 0.95;
   z-index: 100;
 }
 
@@ -24,7 +24,7 @@ header {
   transform: translateX(50%);
 }
 
-.header ul {
+.nav-list {
   display: flex;
 }
 
@@ -44,29 +44,25 @@ header {
   right: -20%;
 }
 
-.header ul li{
+.left-section-list-item,
+.right-section-list-item {
   display: flex;
   align-items: center;
   list-style-type: none;
   width: 100%;
 }
 
-.header li a {
+.nav-list a {
   text-decoration: none;
   font-size: 20px;
   color: rgb(173, 173, 173);
   margin: 0;
 }
 
-.header li a:hover {
-  border-bottom: 2px solid #3e84c1;
-  padding-bottom: 2px;
+.left-section-list-item a:hover,
+.right-section-list-item a:hover {
+  color: #3e84c1;
   transition: all 0.2s ease;
-}
-
-.header li a:active {
-  color: white;
-  transition: all 0.0s ease;
 }
 
 .main-logo {
@@ -77,12 +73,12 @@ header {
 }
 
 .main-logo:hover {
-  border-color: grey;
+  border-color: #3e84c1;
 }
 
 .main-logo:active {
   width: 88px;
-  border: 2px solid grey;
+  border: 2px solid #3e84c1;
 }
 
 .adder-button-container {

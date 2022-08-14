@@ -1,0 +1,29 @@
+.header-mobile {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4.5%;
+  background-color: #3c4146;
+  opacity: 0.85;
+  width: 100%;
+  z-index: 100;
+}
+
+.mobile-header-logo {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+}
+
+.haburger-icon {
+  margin-left: 2%;
+  transition: all 0.7s ease;
+}
+
+.hamburger-img {
+  width: 35%;
+}
+

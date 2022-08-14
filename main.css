@@ -1,50 +1,24 @@
-.main-content-container {
-  margin-top: 156px;
+/* reset css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.main-picture-container {
-  position: fixed;
-  right: 50%;
-  transform: translateX(50%);
+.row {
+  max-width: 75%;
+  margin: 0 auto;
 }
 
-.main-picture {
-  width: 1100px;
-  height: 700px;
-  margin-top: -106px;
+.intro-picture{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('Images_product/product_table.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
 }
 
-.personal-info-container{
-  position: relative;
-  top: 600px;
-  padding-bottom: 30px;
-  background-color: white;
-}
-
-.name-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.name {
-  color: grey;
-  border-bottom: 1px solid;
-  margin-top: 50px;
-  padding-bottom: 10px;
-  margin-bottom: 15;
-  width: 1300px;
-}
-
-.name-side {
-  font-size: 23px;
-}
-
-.personal-info{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  text-align: justify;
-  left: 21%;
-  width: 600px;
+@media (max-width: 880px) {
+  .intro-picture {
+    height: 55vh;
+  }
 }
