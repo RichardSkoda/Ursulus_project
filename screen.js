@@ -3,20 +3,20 @@ const mobile = document.querySelector('.header-mobile');
 const body = document.querySelector('#body');
 
 if (window.innerWidth < 880) {
-  regular.remove();
-  body.appendChild(mobile);
+  regular.style.display = 'none';
+  mobile.style.display = 'flex';
 } else {
-  mobile.remove();
-  body.appendChild(regular);
+  mobile.style.display = 'none';
+  regular.style.display = 'flex';
 }
 
 function changeHeader() {
   if (window.innerWidth < 880) {
-    regular.remove();
-    body.appendChild(mobile);
+    regular.style.display = 'none';
+    mobile.style.display = 'flex';
   } else {
-    mobile.remove();
-    body.appendChild(regular);
+    mobile.style.display = 'none';
+    regular.style.display = 'flex';
   }
 }
 
