@@ -18,7 +18,7 @@
   top: 3%;
 }
 
-.haburger-icon {
+.haburger-icon-container {
   margin-left: 2%;
   transition: all 0.7s ease;
 }
@@ -27,3 +27,16 @@
   width: 35%;
 }
 
+.social-media-icon-mobile {
+  display: flex;
+  gap: 10%;
+  position: absolute;
+  top: 55%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social-media-icon-mobile img {
+  width: 20px;
+  border-radius: 20%;
+}

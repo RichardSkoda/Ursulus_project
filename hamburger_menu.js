@@ -1,11 +1,12 @@
 const hamburgerMenu = document.querySelector('.hamburger-menu');
-const hamburgerIcon = document.querySelector('.hamburger-link');
-const hamburgerIconContainer = document.querySelector('.haburger-icon');
+const hamburgerLink = document.querySelector('.hamburger-link');
+const hamburgerIconContainer = document.querySelector('.haburger-icon-container');
 
 
-console.log(hamburgerMenu)
+console.log(hamburgerMenu);
+console.log(hamburgerIconContainer);
 
-hamburgerIcon.addEventListener('click', function () {
+hamburgerLink.addEventListener('click', function () {
   hamburgerMenu.classList.toggle('active');
   // moveble hambuirger menu or not?????
   if (hamburgerMenu.classList[1] === 'active') {
