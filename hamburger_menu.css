@@ -1,8 +1,8 @@
-.sidebar {
+.hamburger-menu {
   height: 100%;
   width: 0;
   position: fixed;
-  top: 5%;
+  top: 4%;
   left: 0;
   background-color: #3c4146;
   border-radius: 1px;
@@ -10,16 +10,16 @@
   transition: all 0.7s ease;
 }
 
-.sidebar.active {
-  width: 150px;
+.hamburger-menu.active {
+  width: 25%;
 }
 
-.sidebar ul {
+.hamburger-menu ul {
   padding: 0;
-  margin-top: 50px;
+  
 }
 
-.sidebar ul li {
+.hamburger-menu ul li {
   margin-left: -15px;
   list-style-type: none;
   cursor: pointer;
@@ -27,11 +27,11 @@
   transition: all 0.7s ease;
 }
 
-.sidebar.active ul li {
+.hamburger-menu.active ul li {
   margin-left: 0;
 }
 
-.sidebar ul li a {
+.hamburger-menu ul li a {
   position: relative;
   left: -90px;
   text-decoration: none;
@@ -42,17 +42,17 @@
   transition: all 0.7s ease;
 }
 
-.sidebar.active ul li a {
+.hamburger-menu.active ul li a {
   left: 0;
 }
 
 
-.sidebar ul li:hover {
+.hamburger-menu ul li:hover {
   border-left: 5px solid #3e84c1;
   background-color: #2d3135;
   transition: all 0.2s ease;
 }
 
-.sidebar ul li a:active {
+.sidehamburger-menubar ul li a:active {
  color: white;
 }

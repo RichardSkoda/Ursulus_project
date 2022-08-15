@@ -2,26 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="title">Ursulus</title>
+  <link rel="icon" type="image/png" href="Images/favicon.png">
+
   <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="header_mobile.css">
+  <link rel="stylesheet" href="hamburger_menu.css">
   <link rel="stylesheet" href="others_sidebar.css">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="general.css">
   <link rel="stylesheet" href="adder.css">
+  <link rel="stylesheet" href="production.css">
+  <link rel="stylesheet" href="galery_select_line.css">
 
-  <title id="title">Ursulus</title>
 </head>
-<body>
-  <header class="header">
+<body id="body">
+  <header class="header-wide">
     <nav>
-      <ul>
+      <ul class="nav-list">
         <div class="left-section">
-          <li>
-            <a id="main-btn" href="ursulus_main.html">Úvod</a>
+          <li class="left-section-list-item">
+            <a id="main-btn" class="" href="ursulus_main.html">Úvod</a>
           </li>
-          <li>
+          <li class="left-section-list-item">
             <a id="production-btn" href="production.html">Výroba</a>
           </li>
         </div>
@@ -33,10 +39,10 @@
         </div>
 
         <div class="right-section">
-          <li>
+          <li class="right-section-list-item">
             <a id="galery-btn" href="galery.html">Galerie</a>
           </li>
-          <li>
+          <li class="right-section-list-item">
             <a id="contact-btn" href="contact.html">Kontakt</a>
           </li>
         </div>
@@ -50,40 +56,64 @@
     </div>
   </header>
 
-  <div class="sidebar"> 
-    <ul>
-      <li class="sidebar-li"><a class="sidebar-a" href="#">Šperky</a></li>
-      <li class="sidebar-li"><a class="sidebar-a" href="#">Nože</a></li>
-      <li class="sidebar-li"><a class="sidebar-a" href="#">Břitvy</a></li>
-      <li class="sidebar-li"><a class="sidebar-a" href="#">Restauro</a></li>
-      <li class="sidebar-li"><a class="sidebar-a" href="#">Ostatní</a></li>
-    </ul>
-  </div>
+  <header class="header-mobile">
+    <div class="haburger-icon">
+      <a class="hamburger-link" href="#"><img class="hamburger-img" src="Images/social_icons/hamburger-menu.png"></a>
+    </div>
+    <div class="mobile-header-logo">
+      <a href="ursulus_main.html">
+        <img class="main-logo" src="Images/ursulus_logo.jpg">
+      </a>
+    </div>
+
+    <!-- hamburger menu -->
+    <div class="hamburger-menu"> 
+      <ul>
+        <li class="sidebar-li"><a class="sidebar-a" href="#">Úvod</a></li>
+        <li class="sidebar-li"><a class="sidebar-a" href="#">Výroba</a></li>
+        <li class="sidebar-li"><a class="sidebar-a" href="#">Galerie</a></li>
+        <li class="sidebar-li"><a class="sidebar-a" href="#">Kontakt</a></li>
+      </ul>
+    </div>
+  </header>
 
   <main>
-    <div class="main-content-container">
-      <div class="main-picture-container">
-        <img class="main-picture" src="Images/ring_background.jpg" alt="">
+    <!-- intro picture -->
+    <section class="intro-picture">
+        
+    </section>
+
+      <!-- production page -->
+    <section class="production-section">
+      <div class="empty-container">
+
       </div>
-      <div class="personal-info-container">
-        <div class="name-container">
-          <h1 class="name">Václav Nikendey <span class="name-side">- umělecký kovář</span></h1>
+    </section>
+
+    <!-- galery select section -->
+    <section>
+      <div class="thumbnails-container">
+        <div class="jewel-thumbnail-container">
+          <a href=""><img class="thumbnail-photos" src="Images_product/Sperky/Prsteny/PrstenA/prsten.jpg"></a>
         </div>
-        <div class="personal-info">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum fugiat mollitia odit quam officia aperiam quo est, facilis illo fugit voluptas voluptates non modi illum accusamus pariatur quod amet veniam!</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum fugiat mollitia odit quam officia aperiam quo est, facilis illo fugit voluptas voluptates non modi illum accusamus pariatur quod amet veniam!</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum fugiat mollitia odit quam officia aperiam quo est, facilis illo fugit voluptas voluptates non modi illum accusamus pariatur quod amet veniam!</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum fugiat mollitia odit quam officia aperiam quo est, facilis illo fugit voluptas voluptates non modi illum accusamus pariatur quod amet veniam!</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum fugiat mollitia odit quam officia aperiam quo est, facilis illo fugit voluptas voluptates non modi illum accusamus pariatur quod amet veniam!</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum fugiat mollitia odit quam officia aperiam quo est, facilis illo fugit voluptas voluptates non modi illum accusamus pariatur quod amet veniam!</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum fugiat mollitia odit quam officia aperiam quo est, facilis illo fugit voluptas voluptates non modi illum accusamus pariatur quod amet veniam!</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum fugiat mollitia odit quam officia aperiam quo est, facilis illo fugit voluptas voluptates non modi illum accusamus pariatur quod amet veniam!</p>
+        <div class="knive-thumbnail-container">
+          <a href=""><img class="thumbnail-photos" src="Images_product/Nože/Kitchen/nuz2.jpg"></a>
+        </div>
+        <div class="razer-thumbnail-container">
+          <a href=""><img class="thumbnail-photos" src="Images_product/Břitvy/britva.jpg"></a>
+        </div>
+        <div class="restaur-thumbnail-container">
+          <a href=""><img class="thumbnail-photos" src="Images_product/Restauro/restauro.jpg"></a>
+        </div>
+        <div class="other-thumbnail-container">
+          <a href=""><img class="thumbnail-photos" src="Images_product/Ostatni/fajfka.jpg"></a>
         </div>
       </div>
-    </div>
+    </section>
+
   </main>
 
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="social-media-icon">
       <div>
         <a href="https://www.facebook.com/ursuluscraft" target="blank">
@@ -92,8 +122,56 @@
       </div>
       <div><a href=""><img src="Images/social_icons/twitter_white.png"></a></div>
     </div>
-  </footer>
+  </footer> -->
 
-  <script src="sidebar.js"></script>
+  <script src="screen.js"></script>
+  <script src="hamburger_menu.js"></script>
+  <!-- <script src="sidebar.js"></script> -->
 </body>
 </html>
+
+<!-- <div class="sidebar"> 
+    <ul>
+      <li class="sidebar-li"><a class="sidebar-a" href="#">Šperky</a></li>
+      <li class="sidebar-li"><a class="sidebar-a" href="#">Nože</a></li>
+      <li class="sidebar-li"><a class="sidebar-a" href="#">Břitvy</a></li>
+      <li class="sidebar-li"><a class="sidebar-a" href="#">Restauro</a></li>
+      <li class="sidebar-li"><a class="sidebar-a" href="#">Ostatní</a></li>
+    </ul>
+  </div> -->
+
+<!-- personal info
+    <section>
+      <div class="main-content-container">
+        <div class="main-picture-container">
+          <img class="main-picture" src="Images/ring_background.jpg" alt="">
+        </div>
+        <div class="personal-info-container">
+          <div class="name-container row">
+            <h1 class="name">Václav Nikendey <span class="name-side">- umělecký kovář</span></h1>
+          </div>
+          <div class="personal-info row">
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .name-container {
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid grey;
+        margin-bottom: 2%;
+        }
+
+        .name {
+          color: grey;
+          padding-bottom: 10px;
+          margin-bottom: 15;
+        }
+
+        .name-side {
+          font-size: 23px;
+        }
+    </style> -->
