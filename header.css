@@ -20,8 +20,25 @@
 
 .middle-section-logo {
   position: fixed;
+  top: 0;
   right: 50%;
   transform: translateX(50%);
+}
+
+.main-logo {
+  width: 90px;
+  margin-top: 0;
+  border: 1px solid black;
+  border-radius: 45px;
+}
+
+.main-logo:hover {
+  border-color: #3e84c1;
+}
+
+.main-logo:active {
+  width: 88px;
+  border: 2px solid #3e84c1;
 }
 
 .nav-list {
@@ -49,12 +66,13 @@
   display: flex;
   align-items: center;
   list-style-type: none;
-  width: 100%;
+  width: 50%;
 }
 
 .nav-list a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: bold;
   color: rgb(173, 173, 173);
   margin: 0;
 }
@@ -65,25 +83,21 @@
   transition: all 0.2s ease;
 }
 
-.main-logo {
-  width: 90px;
-  margin-top: 0;
-  border: 1px solid black;
-  border-radius: 45px;
+.left-section-list-item a:hover,
+.right-section-list-item a:hover {
+  color: #3e84c1;
+  transition: all 0.2s ease;
 }
 
-.main-logo:hover {
-  border-color: #3e84c1;
-}
-
-.main-logo:active {
-  width: 88px;
-  border: 2px solid #3e84c1;
+.left-section-list-item a:hover,
+.right-section-list-item a:hover {
+  color: #3e84c1;
+  transition: all 0.2s ease;
 }
 
 .adder-button-container {
   position: fixed;
-  left: 20px;
+  left: 2%;
 }
 
 .adder-button-container li {

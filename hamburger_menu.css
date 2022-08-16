@@ -3,9 +3,8 @@
   width: 0;
   position: fixed;
   top: 4%;
-  left: 0;
+  padding-top: 10%;
   background-color: #3c4146;
-  border-radius: 1px;
   z-index: 100;
   transition: all 0.7s ease;
 }
@@ -14,45 +13,32 @@
   width: 25%;
 }
 
-.hamburger-menu ul {
-  padding: 0;
-  
-}
-
-.hamburger-menu ul li {
+.sidebar-item {
   margin-left: -15px;
   list-style-type: none;
-  cursor: pointer;
-  padding: 25px 10px;
+  padding: 20px 10px;
   transition: all 0.7s ease;
 }
 
-.hamburger-menu.active ul li {
+.hamburger-menu.active .sidebar-item {
   margin-left: 0;
 }
 
-.hamburger-menu ul li a {
+.sidebar-link {
   position: relative;
   left: -90px;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
+  cursor: pointer;
   color: rgb(173, 173, 173);
-  padding: 25px 10px;
   transition: all 0.7s ease;
 }
 
-.hamburger-menu.active ul li a {
+.hamburger-menu.active .sidebar-link {
   left: 0;
 }
 
-
-.hamburger-menu ul li:hover {
-  border-left: 5px solid #3e84c1;
-  background-color: #2d3135;
-  transition: all 0.2s ease;
-}
-
-.sidehamburger-menubar ul li a:active {
+.sidebar-link:active {
  color: white;
 }
