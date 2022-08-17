@@ -1,66 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="galery_sidebar.css">
-  <link rel="stylesheet" href="galery_pictures.css">
-  <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="general.css">
-  <link rel="stylesheet" href="adder.css">
-
-  <title id="title">Ursulus- galery</title>
-</head>
-<body>
-  <header class="header">
-    <nav>
-      <ul>
-        <div class="left-section">
-          <li>
-            <a id="main-btn" href="ursulus_main.html">Úvod</a>
-          </li>
-          <li>
-            <a id="production-btn" href="production.html">Výroba</a>
-          </li>
-        </div>
-
-        <div class="middle-section-logo">
-          <a href="ursulus_main.html">
-            <img class="main-logo" src="Images/ursulus_logo.jpg">
-          </a>
-        </div>
-
-        <div class="right-section">
-          <li>
-            <a id="galery-btn" href="galery.html">Galerie</a>
-          </li>
-          <li>
-            <a id="contact-btn" href="contact.html">Kontakt</a>
-          </li>
-        </div>
-      </ul>
-    </nav>
-
-    <div class="adder-button-container">
-      <li>
-        <a id="adder-btn" href="adder.html">Add New</a>
-      </li>
-    </div>
-  </header>
-
-  <!--Sidebar should appear slowly from right side after hamburger icon click-->
-  <!--When go to another site, it should disappear slowly-->
-  <div class="sidebar"> 
-    <ul>
-      <li class="sidebar-li"><a class="sidebar-a" href="#">Šperky</a></li>
-      <li class="sidebar-li"><a class="sidebar-a" href="#">Nože</a></li>
-      <li class="sidebar-li"><a class="sidebar-a" href="#">Břitvy</a></li>
-      <li class="sidebar-li"><a class="sidebar-a" href="#">Restauro</a></li>
-      <li class="sidebar-li"><a class="sidebar-a" href="#">Ostatní</a></li>
-    </ul>
-  </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Ursulus</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png">
+  
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="header_mobile.css">
+    <link rel="stylesheet" href="hamburger_menu.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="adder.css">
+    <link rel="stylesheet" href="production.css">
+    <link rel="stylesheet" href="galery_select_line.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="galery_pictures.css">
+  
+  </head>
+  
+  <body id="body">
+    <header class="header-wide">
+      <nav class="header-navigation">
+        <ul class="nav-list">
+          <div class="left-section">
+            <li class="left-section-list-item">
+              <a id="main-btn" href="ursulus_main.html">ÚVOD</a>
+            </li>
+            <li class="left-section-list-item">
+              <a id="production-btn" href="ursulus_main.html">VÝROBA</a>
+            </li>
+          </div>
+  
+          <div class="middle-section-logo">
+            <a href="ursulus_main.html">
+              <img class="main-logo" src="Images/ursulus_logo.jpg">
+            </a>
+          </div>
+  
+          <div class="right-section">
+            <li class="right-section-list-item">
+              <a id="galery-btn" href="ursulus_main.html">GALERIE</a>
+            </li>
+            <li class="right-section-list-item">
+              <a id="contact-btn" href="ursulus_main.html">KONTAKT</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+  
+      <div class="adder-button-container">
+        <li>
+          <a id="adder-btn" href="adder.html">Add New</a>
+        </li>
+      </div>
+  
+      <!-- social media icons -->
+      <div class="social-media-icon">
+        <a href="https://www.facebook.com/ursuluscraft" target="blank">
+          <img src="Images/social_icons/fb_white.png">
+        </a>
+        <a href=""><img src="Images/social_icons/twitter_white.png"></a>
+      </div>
+    </header>
+  
+    <header class="header-mobile">
+      <div class="hamburger-icon-container">
+        <!-- href="#no" prevent move the page after link is clicked -->
+        <a class="hamburger-link" href="#no"><img class="hamburger-img" src="Images/social_icons/hamburger-menu.png"></a>
+      </div>
+      <div class="mobile-header-logo">
+        <a href="ursulus_main.html">
+          <img class="main-logo" src="Images/ursulus_logo.jpg">
+        </a>
+      </div>
+  
+      <!-- social media icons -->
+      <div class="social-media-icon-mobile">
+        <a href="https://www.facebook.com/ursuluscraft" target="blank">
+          <img src="Images/social_icons/fb_white.png">
+        </a>
+        <a href=""><img src="Images/social_icons/twitter_white.png"></a>
+      </div>
+  
+      <!-- hamburger menu -->
+      <div class="hamburger-menu"> 
+        <ul class="hamburger-list">
+          <li class="sidebar-item"><a class="sidebar-link" href="ursulus_main.html">Úvod</a></li>
+          <li class="sidebar-item"><a class="sidebar-link" href="ursulus_main.html">Výroba</a></li>
+          <li class="sidebar-item"><a class="sidebar-link" href="ursulus_main.html">Galerie</a></li>
+          <li class="sidebar-item"><a class="sidebar-link" href="ursulus_main.html">Kontakt</a></li>
+        </ul>
+      </div>
+  
+    </header>
 
   <main class="main">
     <div class="main-galery-picture-container">
@@ -150,18 +184,45 @@
         </div>
       </div>
       </section>
+
+      <!-- contact section -->
+    <section id="contact-section">
+      <div class="contact-container row">
+        <div class="internet-contact">
+          <p>Kontakt</p>
+          <a href="#">ursulus@gmail.com</a>
+          <a href="#">+420 608 806 608</a>
+        </div>
+        <div class="address">
+          <p>Adresa</p>
+          <p>
+            Ursulus Craft h.2.o. <br>
+            Kokonín 608 <br>
+            461 99 Jablonec nad Nisou 99 <br>
+            IČ: 12345678 <br>
+            DIČ: CZ12345678 <br>
+          </p>
+        </div>
+        <div class="friends">
+          <p>Přátelé</p>
+          <a href="https://www.futuronforge.com">FuturonForge.com</a>
+        </div>
+      </div>
+    </section>
   
   </main>
 
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="social-media-icon">
       <a href="https://www.facebook.com/ursuluscraft" target="blank">
         <img src="Images/social_icons/fb_white.png">
       </a>
       <a href=""><img src="Images/social_icons/twitter_white.png"></a>
     </div>
-  </footer>
+  </footer> -->
 
-  <script src="sidebar.js"></script>
+  <script src="screen.js"></script>
+  <script src="hamburger_menu.js"></script>
+  <!-- <script src="sidebar.js"></script> -->
 </body>
 </html>

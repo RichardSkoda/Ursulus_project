@@ -1,0 +1,42 @@
+#contact-section {
+  background-color: black;
+  color: white;
+  height: 40vh;
+}
+
+.first-paragraph {
+  text-align: justify;
+}
+
+.contact-container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.contact-container div {
+  display: flex;
+  flex-direction: column;
+  height: 50%; 
+}
+
+.contact-container div p {
+  margin-bottom: 10%;
+}
+
+.contact-container div a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 880px) {
+  .contact-container {
+    flex-direction: column;
+    padding-top: 10%;
+  }
+  .contact-container div p {
+    text-align: center;
+  }
+
+}

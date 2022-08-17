@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="adder.css">
   <link rel="stylesheet" href="production.css">
   <link rel="stylesheet" href="galery_select_line.css">
+  <link rel="stylesheet" href="contact.css">
 
 </head>
 
@@ -24,25 +25,25 @@
       <ul class="nav-list">
         <div class="left-section">
           <li class="left-section-list-item">
-            <a id="main-btn" class="" href="ursulus_main.html">ÚVOD</a>
+            <a id="main-btn" href="#intro">ÚVOD</a>
           </li>
           <li class="left-section-list-item">
-            <a id="production-btn" href="production.html">VÝROBA</a>
+            <a id="production-btn" href="#production-section">VÝROBA</a>
           </li>
         </div>
 
         <div class="middle-section-logo">
-          <a href="ursulus_main.html">
+          <a href="#intro">
             <img class="main-logo" src="Images/ursulus_logo.jpg">
           </a>
         </div>
 
         <div class="right-section">
           <li class="right-section-list-item">
-            <a id="galery-btn" href="galery.html">GALERIE</a>
+            <a id="galery-btn" href="#galery-select-section">GALERIE</a>
           </li>
           <li class="right-section-list-item">
-            <a id="contact-btn" href="contact.html">KONTAKT</a>
+            <a id="contact-btn" href="#contact-section">KONTAKT</a>
           </li>
         </div>
       </ul>
@@ -64,11 +65,12 @@
   </header>
 
   <header class="header-mobile">
-    <div class="haburger-icon-container">
-      <a class="hamburger-link" href="#"><img class="hamburger-img" src="Images/social_icons/hamburger-menu.png"></a>
+    <div class="hamburger-icon-container">
+      <!-- href="#no" prevent move the page after link is clicked -->
+      <a class="hamburger-link" href="#no"><img class="hamburger-img" src="Images/social_icons/hamburger-menu.png"></a>
     </div>
     <div class="mobile-header-logo">
-      <a href="ursulus_main.html">
+      <a href="#intro">
         <img class="main-logo" src="Images/ursulus_logo.jpg">
       </a>
     </div>
@@ -84,10 +86,10 @@
     <!-- hamburger menu -->
     <div class="hamburger-menu"> 
       <ul class="hamburger-list">
-        <li class="sidebar-item"><a class="sidebar-link" href="#">Úvod</a></li>
-        <li class="sidebar-item"><a class="sidebar-link" href="#">Výroba</a></li>
-        <li class="sidebar-item"><a class="sidebar-link" href="galery.html">Galerie</a></li>
-        <li class="sidebar-item"><a class="sidebar-link" href="#">Kontakt</a></li>
+        <li class="sidebar-item"><a class="sidebar-link" href="#intro">Úvod</a></li>
+        <li class="sidebar-item"><a class="sidebar-link" href="#production-section">Výroba</a></li>
+        <li class="sidebar-item"><a class="sidebar-link" href="#galery-select-section">Galerie</a></li>
+        <li class="sidebar-item"><a class="sidebar-link" href="#contact-section">Kontakt</a></li>
       </ul>
     </div>
 
@@ -95,38 +97,65 @@
 
   <main>
     <!-- intro picture -->
-    <section class="intro-picture">
+    <section id="intro" class="intro-picture">
+      <p class="first-paragraph row">Dodat nějakou pěknou fotku Venci jak kutí něco v dílně. Ideálně jednu fotku světlou a druhou tmavou, nebo rozhodout, jestli bude web světlý nebo tmavý.</p>
         
     </section>
 
       <!-- production section -->
-    <section class="production-section">
+    <section id="production-section" class="production-section">
       <div class="empty-container">
+        <p>Něco o dílně, technologiích atd.</p>
       </div>
     </section>
 
     <!-- galery select section -->
-    <!-- <section>
+    <section id="galery-select-section">
       <div class="galery-select-section">
         <div class="thumbnails-container row">
           <div class="jewel-thumbnail-container">
-            <a href=""><img class="thumbnail-photos" src="Images_product/Sperky/Prsteny/PrstenA/prsten.jpg"></a>
+            <a href="galery.html"><img class="thumbnail-photos" src="Images/galery_select_thumbnails/prsten.jpg"></a>
           </div>
           <div class="knive-thumbnail-container">
-            <a href=""><img class="thumbnail-photos" src="Images_product/Nože/Kitchen/nuz2.jpg"></a>
+            <a href="#no"><img class="thumbnail-photos" src="Images_product/Nože/Kitchen/nuz2.jpg"></a>
           </div>
           <div class="razer-thumbnail-container">
-            <a href=""><img class="thumbnail-photos" src="Images_product/Břitvy/britva.jpg"></a>
+            <a href="#no"><img class="thumbnail-photos" src="Images_product/Břitvy/britva.jpg"></a>
           </div>
           <div class="restaur-thumbnail-container">
-            <a href=""><img class="thumbnail-photos" src="Images_product/Restauro/restauro.jpg"></a>
+            <a href="#no"><img class="thumbnail-photos" src="Images_product/Restauro/restauro.jpg"></a>
           </div>
           <div class="other-thumbnail-container">
-            <a href=""><img class="thumbnail-photos" src="Images_product/Ostatni/fajfka.jpg"></a>
+            <a href="#no"><img class="thumbnail-photos" src="Images_product/Ostatni/fajfka.jpg"></a>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
+
+    <!-- contact section -->
+    <section id="contact-section">
+      <div class="contact-container row">
+        <div class="internet-contact">
+          <p>Kontakt</p>
+          <a href="#">ursulus@gmail.com</a>
+          <a href="#">+420 608 806 608</a>
+        </div>
+        <div class="address">
+          <p>Adresa</p>
+          <p>
+            Ursulus Craft h.2.o. <br>
+            Kokonín 608 <br>
+            461 99 Jablonec nad Nisou 99 <br>
+            IČ: 12345678 <br>
+            DIČ: CZ12345678 <br>
+          </p>
+        </div>
+        <div class="friends">
+          <p>Přátelé</p>
+          <a href="https://www.futuronforge.com">FuturonForge.com</a>
+        </div>
+      </div>
+    </section>
     
     
 
