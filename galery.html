@@ -20,7 +20,7 @@
   
   </head>
   
-  <body id="body">
+  <body class="galery-body">
     <header class="header-wide">
       <nav class="header-navigation">
         <ul class="nav-list">
@@ -29,7 +29,7 @@
               <a id="main-btn" href="ursulus_main.html">ÚVOD</a>
             </li>
             <li class="left-section-list-item">
-              <a id="production-btn" href="ursulus_main.html">VÝROBA</a>
+              <a id="production-btn" href="ursulus_main.html#production-section">VÝROBA</a>
             </li>
           </div>
   
@@ -41,10 +41,10 @@
   
           <div class="right-section">
             <li class="right-section-list-item">
-              <a id="galery-btn" href="ursulus_main.html">GALERIE</a>
+              <a id="galery-btn" href="ursulus_main.html#galery-select-section">GALERIE</a>
             </li>
             <li class="right-section-list-item">
-              <a id="contact-btn" href="ursulus_main.html">KONTAKT</a>
+              <a id="contact-btn" href="ursulus_main.html#contact-section">KONTAKT</a>
             </li>
           </div>
         </ul>
@@ -88,21 +88,23 @@
       <div class="hamburger-menu"> 
         <ul class="hamburger-list">
           <li class="sidebar-item"><a class="sidebar-link" href="ursulus_main.html">Úvod</a></li>
-          <li class="sidebar-item"><a class="sidebar-link" href="ursulus_main.html">Výroba</a></li>
-          <li class="sidebar-item"><a class="sidebar-link" href="ursulus_main.html">Galerie</a></li>
-          <li class="sidebar-item"><a class="sidebar-link" href="ursulus_main.html">Kontakt</a></li>
+          <li class="sidebar-item"><a class="sidebar-link" href="ursulus_main.html#production-section">Výroba</a></li>
+          <li class="sidebar-item"><a class="sidebar-link" href="ursulus_main.html#galery-select-section">Galerie</a></li>
+          <li class="sidebar-item"><a class="sidebar-link" href="ursulus_main.html#contact-section">Kontakt</a></li>
         </ul>
       </div>
-  
     </header>
 
-  <main class="main">
-    <div class="main-galery-picture-container">
-      <img class="main-galery-picture" src="Images_product/product_table.jpg">
-    </div>
-    <div class="galery-main-image"></div>
+  <main>
+    <section class="galery-info-section row">
+      <div class="galery-info-container">
+        <h1><strong>Prsteny</strong></h1>
+        <p>Nějaké obecné info o prstenech <br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium vero ipsam, perspiciatis mollitia neque, recusandae minima impedit ratione fugit, voluptatum architecto voluptates tempora. Corrupti sapiente facilis odio molestias voluptatum consequuntur!</p>
+      </div>
+    </section>
 
-    <section class="rings-grid">
+    <section class="rings-grid row">
       <div class="item-preview">
         <div class="galery-picture-container">
           <a href=""><img class="thumbnail" src="Images_product/Sperky/Prsteny/PrstenA/prsten.jpg"></a>
@@ -183,7 +185,7 @@
           <p class="ring-title">RingJ</p>  
         </div>
       </div>
-      </section>
+    </section>
 
       <!-- contact section -->
     <section id="contact-section">

@@ -1,18 +1,23 @@
-.main-galery-picture-container {
-  position: fixed;
-  background-size: contain;
-  background-color: black;
+.galery-body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('Images_product/product_table.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 
-.main-galery-picture {
-  opacity: 0.2;
+.galery-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  opacity: 0.8;
+  margin-top: 100px;
 }
 
 .rings-grid {
-  position: absolute;
-  top: 12%;
-  left: 10%;
-  right: 10%;
+  position: relative;
+  top: 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 7%;

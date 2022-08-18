@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="header_mobile.css">
+  <link rel="stylesheet" href="hamburger_menu.css">
   <link rel="stylesheet" href="others_sidebar.css">
   <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="general.css">
@@ -13,16 +15,16 @@
 
   <title id="title">Ursulus</title>
 </head>
-<body>
-  <header class="header">
-    <nav>
-      <ul>
+<body class="adder-body">
+  <header class="header-wide">
+    <nav class="header-navigation">
+      <ul class="nav-list">
         <div class="left-section">
-          <li>
-            <a id="main-btn" href="ursulus_main.html">Úvod</a>
+          <li class="left-section-list-item">
+            <a id="main-btn" href="ursulus_main.html">ÚVOD</a>
           </li>
-          <li>
-            <a id="production-btn" href="production.html">Výroba</a>
+          <li class="left-section-list-item">
+            <a id="production-btn" href="ursulus_main.html#production-section">VÝROBA</a>
           </li>
         </div>
 
@@ -33,34 +35,60 @@
         </div>
 
         <div class="right-section">
-          <li>
-            <a id="galery-btn" href="galery.html">Galerie</a>
+          <li class="right-section-list-item">
+            <a id="galery-btn" href="ursulus_main.html#galery-select-section">GALERIE</a>
           </li>
-          <li>
-            <a id="contact-btn" href="contact.html">Kontakt</a>
+          <li class="right-section-list-item">
+            <a id="contact-btn" href="ursulus_main.html#contact-section">KONTAKT</a>
           </li>
         </div>
       </ul>
     </nav>
-
-    
 
     <div class="adder-button-container">
       <li>
         <a id="adder-btn" href="adder.html">Add New</a>
       </li>
     </div>
+
+    <!-- social media icons -->
+    <div class="social-media-icon">
+      <a href="https://www.facebook.com/ursuluscraft" target="blank">
+        <img src="Images/social_icons/fb_white.png">
+      </a>
+      <a href=""><img src="Images/social_icons/twitter_white.png"></a>
+    </div>
   </header>
 
-  <!-- <div class="sidebar"> 
-    <ul>
-      <li class="sidebar-li"><a class="sidebar-a" href="#">Šperky</a></li>
-      <li class="sidebar-li"><a class="sidebar-a" href="#">Nože</a></li>
-      <li class="sidebar-li"><a class="sidebar-a" href="#">Břitvy</a></li>
-      <li class="sidebar-li"><a class="sidebar-a" href="#">Restauro</a></li>
-      <li class="sidebar-li"><a class="sidebar-a" href="#">Ostatní</a></li>
-    </ul>
-  </div> -->
+  <header class="header-mobile">
+    <div class="hamburger-icon-container">
+      <!-- href="#no" prevent move the page after link is clicked -->
+      <a class="hamburger-link" href="#no"><img class="hamburger-img" src="Images/social_icons/hamburger-menu.png"></a>
+    </div>
+    <div class="mobile-header-logo">
+      <a href="ursulus_main.html">
+        <img class="main-logo" src="Images/ursulus_logo.jpg">
+      </a>
+    </div>
+
+    <!-- social media icons -->
+    <div class="social-media-icon-mobile">
+      <a href="https://www.facebook.com/ursuluscraft" target="blank">
+        <img src="Images/social_icons/fb_white.png">
+      </a>
+      <a href=""><img src="Images/social_icons/twitter_white.png"></a>
+    </div>
+
+    <!-- hamburger menu -->
+    <div class="hamburger-menu"> 
+      <ul class="hamburger-list">
+        <li class="sidebar-item"><a class="sidebar-link" href="ursulus_main.html">Úvod</a></li>
+        <li class="sidebar-item"><a class="sidebar-link" href="ursulus_main.html#production-section">Výroba</a></li>
+        <li class="sidebar-item"><a class="sidebar-link" href="ursulus_main.html#galery-select-section">Galerie</a></li>
+        <li class="sidebar-item"><a class="sidebar-link" href="ursulus_main.html#contact-section">Kontakt</a></li>
+      </ul>
+    </div>
+  </header>
 
   <main>
     <form class="form">
@@ -105,7 +133,7 @@
     </form>
   </main>
 
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="social-media-icon">
       <div>
         <a href="https://www.facebook.com/ursuluscraft" target="blank">
@@ -114,9 +142,10 @@
       </div>
       <div><a href=""><img src="Images/social_icons/twitter_white.png"></a></div>
     </div>
-  </footer>
+  </footer> -->
 
-  <script src="sidebar.js"></script>
+  <script src="screen.js"></script>
+  <script src="hamburger_menu.js"></script>
   <script src="adder.js"></script>
 </body>
 </html>

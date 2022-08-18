@@ -1,7 +1,6 @@
 #contact-section {
   background-color: black;
   color: white;
-  height: 40vh;
 }
 
 .first-paragraph {
@@ -12,38 +11,39 @@
   display:flex;
   justify-content: center;
   justify-content: space-between;
+  padding-top: 40px;
 }
 
-.contact-container div {
+.internet-contact,
+.address,
+.friends {
   display: flex;
   flex-direction: column;
   margin-bottom: 7%;
 }
 
-/* .contact-container div p {
-  
-} */
+.contact-container h3 {
+  padding-bottom: 10px;
+}
 
 .contact-container div a {
   text-decoration: none;
   color: white;
 }
 
-@media (min-width: 880px) {
+/* @media (min-width: 880px) {
   .contact-container {
-    padding-top: 8%;
+    padding-top: 40px;
   }
-}
+} */
 
 @media (max-width: 880px) {
-  #contact-section {
-    height: 35vh;
-  }
   .contact-container {
     flex-direction: column;
     align-items: center;
-    padding-top: 10%;
+    /* padding-top: 40px; */
   }
+  .contact-container h3,
   .contact-container div p {
     text-align: center;
   }
