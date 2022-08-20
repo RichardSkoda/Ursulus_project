@@ -5,17 +5,11 @@
   padding: 0;
 }
 
-.row {
-  max-width: 75%;
-  margin: 0 auto;
-}
-
 .intro-picture{
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('Images_product/product_table.jpg');
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,6 +20,11 @@
   font-size: 50px;
   font-weight: bold;
   opacity: 0.8;
+}
+
+
+.first-paragraph {
+  text-align: justify;
 }
 
 @media (max-width: 880px) {

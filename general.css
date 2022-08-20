@@ -13,6 +13,17 @@ body {
   min-height: 100vh;
 }
 
+.row {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+/* header mvoe to this empty space instead of to title of the section */
+#empty-space {
+  position: relative;
+  top: -60px;
+}
+
 
 /*
   background-image: url('Images_product/Sperky/uvodni_obr.jpg');

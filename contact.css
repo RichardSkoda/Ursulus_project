@@ -3,10 +3,6 @@
   color: white;
 }
 
-.first-paragraph {
-  text-align: justify;
-}
-
 .contact-container {
   display:flex;
   justify-content: center;
@@ -23,12 +19,28 @@
 }
 
 .contact-container h3 {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .contact-container div a {
   text-decoration: none;
   color: white;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+
+.contact-container div p {
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+
+.social-media-icons-contact-section {
+  margin-top: 1.2em;
+}
+
+.social-media-icons-contact-section img {
+  width: 20px;
+  border-radius: 20%;
 }
 
 /* @media (min-width: 880px) {
