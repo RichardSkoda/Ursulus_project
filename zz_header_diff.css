@@ -20,7 +20,7 @@
 
 .logo-container {
   position: relative;
-  left: -45%;
+  left: -40%;
   top: 29%;
 }
 
@@ -42,14 +42,10 @@
 
 .nav-list {
   display: flex;
-  position: relative;
-  left: 150%;
+  position: absolute;
+  right: 30%;
+  top: 38%;
   gap: 15%;
-}
-
-.list-item {
-  display: flex;
-  align-items: center;
   list-style-type: none;
 }
 
