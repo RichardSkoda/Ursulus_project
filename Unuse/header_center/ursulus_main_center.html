@@ -7,7 +7,7 @@
   <title id="title">Ursulus</title>
   <link rel="icon" type="image/png" href="Images/favicon.png">
 
-  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="header_center.css">
   <link rel="stylesheet" href="header_mobile.css">
   <link rel="stylesheet" href="hamburger_menu.css">
   <link rel="stylesheet" href="main.css">
@@ -23,34 +23,36 @@
   <header class="header-wide">
     <nav class="header-navigation">
       <ul class="nav-list">
-        <li class="list-item">
-          <a id="main-btn" href="#intro">ÚVOD</a>
-        </li>
-        <li class="list-item">
-          <a id="production-btn" href="#production-section">VÝROBA</a>
-        </li>
-        <li class="list-item">
-          <a id="galery-btn" href="#empty-space">GALERIE</a>
-        </li>
-        <li class="list-item">
-          <a id="contact-btn" href="#contact-section">KONTAKT</a>
-        </li>
+        <div class="left-section">
+          <li class="left-section-list-item">
+            <a id="main-btn" href="#intro">ÚVOD</a>
+          </li>
+          <li class="left-section-list-item">
+            <a id="production-btn" href="#production-section">VÝROBA</a>
+          </li>
+        </div>
+
+        <div class="middle-section-logo">
+          <a href="#intro">
+            <img class="main-logo" src="Images/ursulus_logo.jpg">
+          </a>
+        </div>
+
+        <div class="right-section">
+          <li class="right-section-list-item">
+            <a id="galery-btn" href="#empty-space">GALERIE</a>
+          </li>
+          <li class="right-section-list-item">
+            <a id="contact-btn" href="#contact-section">KONTAKT</a>
+          </li>
+        </div>
       </ul>
     </nav>
 
-    <div class="logo-container">
-        <a href="#intro">
-          <img class="main-logo" src="Images/ursulus_logo.jpg">
-        </a>
-    </div>
-
     <div class="adder-button-container">
-      <a id="adder-btn" href="adder.html">Add New</a>
-    </div>
-
-    <div class="langauge-icons">
-      <a href="#none"><img src="Images/social_icons/czech-flag.png" alt=""></a>
-      <a href="#none"><img src="Images/social_icons/english_flag.png" alt=""></a>
+      <li>
+        <a id="adder-btn" href="adder.html">Add New</a>
+      </li>
     </div>
 
     <!-- social media icons -->
@@ -58,8 +60,7 @@
       <a href="https://www.facebook.com/ursuluscraft" target="blank">
         <img src="Images/social_icons/fb_white.png">
       </a>
-      <a href="#none"><img src="Images/social_icons/twitter_white.png"></a>
-      <a href="#none"><img src="Images/social_icons/instagram_white.png"></a>
+      <a href=""><img src="Images/social_icons/twitter_white.png"></a>
     </div>
   </header>
 
@@ -68,9 +69,9 @@
       <!-- href="#no" prevent move the page after link is clicked -->
       <a class="hamburger-link" href="#no"><img class="hamburger-img" src="Images/social_icons/hamburger-menu.png"></a>
     </div>
-    <div class="mobile-header-logo-container">
+    <div class="mobile-header-logo">
       <a href="#intro">
-        <img class="main-logo-mobile" src="Images/ursulus_logo.jpg">
+        <img class="main-logo" src="Images/ursulus_logo.jpg">
       </a>
     </div>
 
@@ -168,17 +169,10 @@
           <a href="#">ursulus@gmail.com</a>
           <a href="#">+420 608 806 608</a>
           <div class="social-media-icons-contact-section">
-            <div class="contact-social-icon-container">
-              <a href="https://www.facebook.com/ursuluscraft" target="blank">
-                <img src="Images/social_icons/fb_white.png">
-              </a>
-            </div>
-            <div class="contact-social-icon-container">
-              <a href="#none"><img src="Images/social_icons/twitter_white.png"></a>
-            </div>
-            <div class="contact-social-icon-container">
-              <a href="#none"><img src="Images/social_icons/instagram_white.png"></a>
-            </div>
+            <a href="https://www.facebook.com/ursuluscraft" target="blank">
+              <img src="Images/social_icons/fb_white.png">
+            </a>
+            <a href=""><img src="Images/social_icons/twitter_white.png"></a>
           </div>
         </div>
         <div class="address">
@@ -193,10 +187,20 @@
         </div>
         <div class="friends">
           <h3>Přátelé</h3>
-          <a href="https://www.futuronforge.com" target="_blank">FuturonForge.com</a>
+          <a href="https://www.futuronforge.com">FuturonForge.com</a>
         </div>
       </div>
     </section>
+
+    <!-- social media icons -->
+    <div class="social-media-icon">
+      <a href="https://www.facebook.com/ursuluscraft" target="blank">
+        <img src="Images/social_icons/fb_white.png">
+      </a>
+      <a href=""><img src="Images/social_icons/twitter_white.png"></a>
+    </div>
+    
+    
 
   </main>
 

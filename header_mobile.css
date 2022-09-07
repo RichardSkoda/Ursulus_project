@@ -12,10 +12,17 @@
   z-index: 100;
 }
 
-.mobile-header-logo {
+.mobile-header-logo-container {
   position: absolute;
   right: 3%;
   top: 3%;
+}
+
+.main-logo-mobile {
+  width: 90px;
+  margin-top: 0;
+  border: 1px solid black;
+  border-radius: 50%;
 }
 
 .hamburger-icon-container {

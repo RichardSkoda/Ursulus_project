@@ -18,7 +18,7 @@ body {
   margin: 0 auto;
 }
 
-/* header mvoe to this empty space instead of to title of the section */
+/* header mvoe to this empty space instead of to title of the section (after navigation link click) */
 #empty-space {
   position: relative;
   top: -60px;

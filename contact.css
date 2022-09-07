@@ -15,7 +15,7 @@
 .friends {
   display: flex;
   flex-direction: column;
-  margin-bottom: 7%;
+  margin-bottom: 30px;
 }
 
 .contact-container h3 {
@@ -24,7 +24,7 @@
 
 .contact-container div a {
   text-decoration: none;
-  color: white;
+  color: rgb(139, 34, 34);
   letter-spacing: 1px;
   line-height: 1.5em;
 }
@@ -35,13 +35,32 @@
 }
 
 .social-media-icons-contact-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin-top: 1.2em;
+  height: 50px;
+}
+
+.contact-social-icon-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 25px;
 }
 
 .social-media-icons-contact-section img {
   width: 20px;
   border-radius: 20%;
+  transition: all 0.2s ease;
 }
+
+.social-media-icons-contact-section img:hover {
+  width: 25px;
+  border-radius: 20%;
+}
+
+
 
 /* @media (min-width: 880px) {
   .contact-container {

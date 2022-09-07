@@ -1,11 +1,10 @@
-.galery-title {
+.galery-title-container {
   background-color: white;
-  width: 100%;
-  margin-top: 45px;
-  padding-top: 60px;
+  margin-top: 112px;
+  margin-left: 5%;
 }
 
-.galery-title h1 {
+.galery-title{
   font-size: 30px;
   color: black;
 }
@@ -39,6 +38,12 @@
 @media (max-width: 880px) {
   .rings-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .rings-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
