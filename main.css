@@ -6,7 +6,7 @@
 }
 
 .intro-picture{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('Images_product/product_table.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url('Images_product/forge.jpg');
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
@@ -17,9 +17,10 @@
 
 .intro-picture p{
   background-color: white;
+  font-family: Roboto;
   font-size: 50px;
   font-weight: bold;
-  opacity: 0.8;
+  opacity: 0.3;
 }
 
 

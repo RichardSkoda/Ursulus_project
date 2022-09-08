@@ -24,7 +24,7 @@
 
 .contact-container div a {
   text-decoration: none;
-  color: rgb(139, 34, 34);
+  color: rgb(205, 70, 70);
   letter-spacing: 1px;
   line-height: 1.5em;
 }
@@ -57,7 +57,7 @@
 
 .social-media-icons-contact-section img:hover {
   width: 25px;
-  border-radius: 20%;
+  opacity: 0.5;
 }
 
 

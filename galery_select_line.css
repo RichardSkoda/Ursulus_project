@@ -5,7 +5,7 @@ box-sizing: border-box;
 }
 
 #galery-select-section {
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('Images_product/product_table.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0)), url('Images_product/forge.jpg');
   background-attachment: fixed;
   background-size: cover;
 }
