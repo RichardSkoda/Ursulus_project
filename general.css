@@ -19,9 +19,10 @@ body {
 }
 
 /* header mvoe to this empty space instead of to title of the section (after navigation link click) */
-#empty-space {
+#empty-space-production,
+#empty-space-galery {
   position: relative;
-  top: -60px;
+  top: -100px;
 }
 
 

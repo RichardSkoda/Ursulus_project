@@ -119,6 +119,7 @@ textarea:focus, input:focus{
 .submit-button {
   position: relative;
   left: 50%;
+  bottom: 25px;
   transform: translate(-50%);
   padding: 10px 16px;
   font-size: 15px;
