@@ -15,7 +15,6 @@ hamburgerLink.addEventListener('click', function () {
   // }
 })
 
-console.log(navigationBtn)
 
 navigationBtn.forEach(function (link) {
   link.addEventListener('click', function () {
