@@ -25,6 +25,14 @@ body {
   top: -100px;
 }
 
+@media (max-width: 1000px) {
+  #empty-space-production,
+  #empty-space-galery {
+    position: relative;
+    top: -45px;
+}
+}
+
 
 /*
   background-image: url('Images_product/Sperky/uvodni_obr.jpg');

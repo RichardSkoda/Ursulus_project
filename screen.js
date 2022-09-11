@@ -2,7 +2,7 @@ const regular = document.querySelector('.header-wide');
 const mobile = document.querySelector('.header-mobile');
 const body = document.querySelector('#body');
 
-if (window.innerWidth < 880) {
+if (window.innerWidth < 1000) {
   regular.style.display = 'none';
   mobile.style.display = 'flex';
 } else {
@@ -11,7 +11,7 @@ if (window.innerWidth < 880) {
 }
 
 function changeHeader() {
-  if (window.innerWidth < 880) {
+  if (window.innerWidth < 1000) {
     regular.style.display = 'none';
     mobile.style.display = 'flex';
   } else {

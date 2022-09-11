@@ -9,7 +9,7 @@ hamburgerLink.addEventListener('click', function () {
   hamburgerMenu.classList.toggle('active');
   // moveble hambuirger menu or not?????
   // if (hamburgerMenu.classList[1] === 'active') {
-  //   hamburgerIconContainer.style.marginLeft = '27%';
+  //   hamburgerIconContainer.style.marginLeft = '17%';
   // } else {
   //   hamburgerIconContainer.style.marginLeft = '2%';
   // }
