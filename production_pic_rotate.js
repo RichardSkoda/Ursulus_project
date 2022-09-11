@@ -16,10 +16,6 @@ function findPos(img) {
   }
 }
 
-console.log(img1.offsetParent)
-console.log(img1.offsetLeft)
-console.log(img1.offsetTop)
-
 window.addEventListener('scroll', function(event) {
   scrolled = this.window.scrollY;
   

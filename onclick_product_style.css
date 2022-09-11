@@ -1,0 +1,39 @@
+.overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 500;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 100vh;
+  background-color: white;
+  padding: 2%;
+}
+
+.product-info {
+  padding: 5%;
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  top: -0.5%;
+  right: 0.5%;
+  cursor: pointer;
+  font-size: 35px;
+}
+
+.close-button-content {
+  font-size: 25px;
+  font-weight: bold;
+}
